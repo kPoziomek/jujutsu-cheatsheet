@@ -63,6 +63,20 @@ jj diffedit #Lets you edit the content changes in a revision with a diff editor.
 #### Creating a new repository
 
 ```bash
-jj init my-repo # Creates a new jj repository in the "my-repo" directory
+jj git init my-repo # Creates a new jj repository in the "my-repo" directory
 cd my-repo
 ```
+### Cloning an existing repository
+
+```bash
+jj git clone <repository-url> # Clones an existing jj repository from the specified URL
+cd <repository-name>
+```
+
+### Basic Workflow
+
+1. Make changes to your files in the working directory.
+2. Use `jj status` to see the changes you've made.
+3. Use `jj diff` to review the changes.
+4. Use `jj commit` to save your changes as a new commit.
+5. Use `jj log` to view the commit history.
